@@ -13,6 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { VideoComponent } from './shared/video/video.component';
 import { ProjectComponent } from './components/project/project.component';
+import { WayPointDirectiveDirective } from './core/way-point-directive.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProjectComponent } from './components/project/project.component';
     FooterComponent,
     HeaderComponent,
     VideoComponent,
-    ProjectComponent
+    ProjectComponent,
+    WayPointDirectiveDirective
   ],
   imports: [
     BrowserModule,

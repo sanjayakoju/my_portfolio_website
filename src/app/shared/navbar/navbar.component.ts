@@ -29,7 +29,13 @@ export class NavbarComponent {
   smoothScroll(sectionId: string) {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      // element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+
+      const offsetTop = element.offsetTop;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
     }
   }
 
