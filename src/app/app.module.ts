@@ -14,6 +14,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { VideoComponent } from './shared/video/video.component';
 import { ProjectComponent } from './components/project/project.component';
 import { WayPointDirectiveDirective } from './core/way-point-directive.directive';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { WayPointDirectiveDirective } from './core/way-point-directive.directive
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
