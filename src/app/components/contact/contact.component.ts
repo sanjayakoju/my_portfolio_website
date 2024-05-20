@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit {
     this.isSubmitted = true;
     if(this.contactForm.valid) {
       const data = {
+        contactUsId: new Date().getTime().toString(),
         name: this.contactForm.value.name,
         email: this.contactForm.value.email,
         subject: this.contactForm.value.subject,
