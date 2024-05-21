@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  smoothScroll(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offsetTop = element.offsetTop;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  }
 }
